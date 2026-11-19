@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archivio Cremisi | Dossier 017</title>
+<style>
+:root{--bg:#09090b;--panel:#111014;--panel2:#171319;--red:#8f2635;--red2:#c05a62;--gold:#b99a69;--ivory:#ded2bd;--muted:#9d9290;--line:rgba(185,154,105,.34)}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:radial-gradient(ellipse at 50% 0%,#29151b 0,#100d11 34%,#070709 78%);color:var(--ivory);font-family:Georgia,'Times New Roman',serif;letter-spacing:.02em}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.025) 4px),radial-gradient(circle at 20% 40%,transparent 0 35%,#000 100%);z-index:5}
+a{color:var(--gold);text-decoration:none}a:hover{color:#f0d9aa}
+.wrap{width:min(1100px,calc(100% - 30px));margin:38px auto 70px}
+.topline{display:flex;justify-content:space-between;gap:15px;align-items:center;color:var(--muted);font:10px/1.5 Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;border-bottom:1px solid var(--line);padding:0 3px 13px}
+.seal{width:58px;height:58px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--red2);font-size:27px;box-shadow:0 0 22px #6d1d2b33;margin:0 auto 14px}
+header{text-align:center;padding:35px 15px 29px;border-bottom:1px solid var(--line);position:relative}
+.kicker{font:10px Arial,sans-serif;letter-spacing:.38em;text-transform:uppercase;color:var(--red2)}h1{font-size:clamp(34px,7vw,66px);font-weight:normal;letter-spacing:.11em;text-transform:uppercase;margin:10px 0 5px;color:#eadfcf;text-shadow:0 3px 22px #a12c3b44}.subtitle{font-style:italic;color:var(--gold);font-size:16px}
+.content{display:grid;grid-template-columns: minmax(260px, .85fr) minmax(0,1.4fr);gap:25px;margin-top:28px}
+.panel{background:linear-gradient(145deg,#171319ee,#0d0c0fee);border:1px solid var(--line);box-shadow:0 18px 50px #0008;position:relative;padding:22px}
+.panel:before,.panel:after{content:"✦";position:absolute;color:var(--gold);font-size:12px;background:#111014;padding:0 7px}.panel:before{top:-8px;left:17px}.panel:after{bottom:-8px;right:17px}
+.portrait{height:410px;position:relative;overflow:hidden;border:1px solid #72513e;background:radial-gradient(ellipse at 50% 25%,#63404a 0,#291b25 35%,#0c0a0e 78%);display:grid;place-items:center;text-align:center;color:#c6a98b}
+.portrait:before{content:"";position:absolute;inset:14px;border:1px solid #b99a6955;pointer-events:none}.portrait .placeholder{padding:25px;max-width:250px}.portrait strong{display:block;font-size:22px;font-weight:normal;letter-spacing:.13em;text-transform:uppercase}.portrait small{display:block;margin-top:10px;color:#c1a58b;font:10px Arial,sans-serif;letter-spacing:.2em;line-height:1.8}
+.portrait img{width:100%;height:100%;object-fit:cover;display:none}
+.identity{text-align:center;padding:18px 5px 2px}.identity h2{font-size:25px;font-weight:normal;margin:0 0 5px;letter-spacing:.1em}.identity p{margin:0;color:var(--red2);font:10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:18px}.stat{background:#100e12;padding:12px}.stat span{display:block;color:var(--muted);font:9px Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;margin-bottom:5px}.stat b{font-size:14px;font-weight:normal;color:#e4d5c1}
+.section-title{font-size:21px;font-weight:normal;letter-spacing:.12em;text-transform:uppercase;margin:0 0 15px;color:#e6d7c3}.section-title:after{content:"";display:block;width:65px;height:1px;background:var(--red2);margin-top:10px}.bio{font-size:15px;line-height:1.85;color:#c9bdae}.bio p{margin:0 0 13px}.quote{border-left:2px solid var(--red);margin:20px 0 0;padding:8px 0 8px 17px;color:var(--gold);font-style:italic;font-size:17px;line-height:1.55}
+.lower{margin-top:27px}.gallery-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:15px}.gallery-head small{font:9px Arial,sans-serif;color:var(--muted);letter-spacing:.18em;text-transform:uppercase}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.tile{border:1px solid var(--line);background:#0d0b0e;padding:6px;cursor:pointer;transition:.2s}.tile:hover{border-color:var(--red2);transform:translateY(-3px);box-shadow:0 8px 22px #0008}.tile .thumb{height:145px;background:radial-gradient(ellipse at 50% 35%,#56313c,#21161f 55%,#0a090b);display:grid;place-items:center;color:#b99a69;font-size:25px;overflow:hidden}.tile img{width:100%;height:100%;object-fit:cover;display:none}.tile span{display:block;text-align:center;padding:9px 3px 5px;color:#c8b89f;font:9px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.notes{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:25px}.note{border-top:1px solid var(--line);padding-top:15px}.note h3{font-size:15px;font-weight:normal;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin:0 0 9px}.note p{font-size:13px;line-height:1.7;color:#b9ada0;margin:0}
+footer{text-align:center;border-top:1px solid var(--line);margin-top:35px;padding:20px 10px;color:#756b68;font:9px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase}
+.lightbox{position:fixed;inset:0;background:#050406f2;display:none;align-items:center;justify-content:center;padding:25px;z-index:10}.lightbox.open{display:flex}.lightbox-inner{max-width:min(900px,95vw);max-height:90vh;text-align:center}.lightbox img{max-width:100%;max-height:78vh;object-fit:contain;border:1px solid var(--gold);box-shadow:0 0 40px #000}.lightbox .caption{color:var(--gold);margin-top:12px;font-style:italic}.close{position:fixed;top:18px;right:24px;background:none;border:1px solid var(--gold);color:var(--ivory);font:22px Georgia;padding:5px 12px;cursor:pointer}
+@media(max-width:760px){.content{grid-template-columns:1fr}.portrait{height:350px}.gallery{grid-template-columns:repeat(2,1fr)}.tile .thumb{height:125px}.notes{grid-template-columns:1fr}.topline{font-size:8px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topline"><span>Archivio privato · Sezione occulta</span><span>Fascicolo n. 017 / Accesso riservato</span></div>
+  <header>
+    <div class="seal">✥</div>
+    <div class="kicker">Registro delle presenze · Notturno</div>
+    <h1>Seraphine Vesper</h1>
+    <div class="subtitle">La dama dell'ultima candela</div>
+  </header>
+  <main>
+    <div class="content">
+      <aside class="panel">
+        <div class="portrait" id="portraitBox">
+          <div class="placeholder"><strong>Ritratto<br>non disponibile</strong><small>Sostituisci "ritratto.jpg"<br>con la fotografia del personaggio</small></div>
+          <img src="ritratto.jpg" alt="Ritratto di Seraphine" onload="this.style.display='block';this.previousElementSibling.style.display='none'">
+        </div>
+        <div class="identity"><h2>Seraphine Vesper</h2><p>Casata Vesper · Stirpe crepuscolare</p></div>
+        <div class="stats">
+          <div class="stat"><span>Età apparente</span><b>Ventotto anni</b></div>
+          <div class="stat"><span>Natura</span><b>Vampira</b></div>
+          <div class="stat"><span>Dimora</span><b>Palazzo delle Ceneri</b></div>
+          <div class="stat"><span>Affiliazione</span><b>Indipendente</b></div>
+          <div class="stat"><span>Professione</span><b>Antiquaria</b></div>
+          <div class="stat"><span>Stato</span><b>Attiva</b></div>
+        </div>
+      </aside>
+      <section class="panel">
+        <h2 class="section-title">Identità e cronache</h2>
+        <div class="bio">
+          <p>Nei registri della città il suo nome compare raramente, quasi sempre ai margini di una testimonianza o in calce a una lettera mai recapitata. Seraphine Vesper abita il silenzio con la naturalezza di chi vi è nata.</p>
+          <p>Colleziona oggetti appartenuti a persone scomparse: piccoli orologi fermi, fotografie bruciate, chiavi senza serratura. Non cerca il passato per nostalgia, ma per capire quale parte di esso continui a respirare nel presente.</p>
+          <p>La sua cortesia è impeccabile, la voce quieta. Eppure, nelle stanze in cui si trattiene, le candele sembrano consumarsi più lentamente.</p>
+        </div>
+        <div class="quote">«Ogni cosa conserva l'impronta di chi l'ha perduta. Persino le persone.»</div>
+      </section>
+    </div>
+    <section class="panel lower">
+      <div class="gallery-head"><h2 class="section-title" style="margin:0">Galleria dei reperti</h2><small>Seleziona un'immagine per ingrandirla</small></div>
+      <div class="gallery">
+        <div class="tile" onclick="openImage('galleria-01.jpg','Il salone delle candele')"><div class="thumb"><span>✥</span><img src="galleria-01.jpg" alt="Il salone delle candele" onload="this.style.display='block';this.previousElementSibling.style.display='none'"></div><span>Il salone</span></div>
+        <div class="tile" onclick="openImage('galleria-02.jpg','Il ritratto velato')"><div class="thumb"><span>✥</span><img src="galleria-02.jpg" alt="Il ritratto velato" onload="this.style.display='block';this.previousElementSibling.style.display='none'"></div><span>Il ritratto</span></div>
+        <div class="tile" onclick="openImage('galleria-03.jpg','La cappella in rovina')"><div class="thumb"><span>✥</span><img src="galleria-03.jpg" alt="La cappella in rovina" onload="this.style.display='block';this.previousElementSibling.style.display='none'"></div><span>La cappella</span></div>
+        <div class="tile" onclick="openImage('galleria-04.jpg','Il sigillo di famiglia')"><div class="thumb"><span>✥</span><img src="galleria-04.jpg" alt="Il sigillo di famiglia" onload="this.style.display='block';this.previousElementSibling.style.display='none'"></div><span>Il sigillo</span></div>
+      </div>
+    </section>
+    <div class="notes">
+      <section class="note"><h3>Annotazione d'archivio</h3><p>Il fascicolo è incompleto. Tre pagine risultano strappate e una quarta presenta macchie scure non identificate.</p></section>
+      <section class="note"><h3>Ultima segnalazione</h3><p>Avvistata presso la cappella abbandonata, poco prima del rintocco della mezzanotte.</p></section>
+    </div>
+  </main>
+  <footer>Archivio Cremisi · Documento fittizio · Fine del fascicolo</footer>
+</div>
+<div class="lightbox" id="lightbox" onclick="if(event.target===this)closeImage()"><button class="close" onclick="closeImage()" aria-label="Chiudi">×</button><div class="lightbox-inner"><img id="largeImage" src="" alt=""><div class="caption" id="caption"></div></div></div>
+<script>
+function openImage(src,caption){const box=document.getElementById('lightbox');const img=document.getElementById('largeImage');img.src=src;img.alt=caption;document.getElementById('caption').textContent=caption;box.classList.add('open')}
+function closeImage(){document.getElementById('lightbox').classList.remove('open');document.getElementById('largeImage').src=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeImage()});
+</script>
+</body>
+</html>
